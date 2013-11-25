@@ -234,7 +234,7 @@ fi
 # Uncomment the following line to make the umask available when using the
 # org.apache.catalina.security.SecurityListener
 #JAVA_OPTS="$JAVA_OPTS -Dorg.apache.catalina.security.SecurityListener.UMASK=`umask`"
-JAVA_OPTS="$JAVA_OPTS -Xms512m -Xmx1024m -XX:PermSize=256m -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled"
+JAVA_OPTS="$JAVA_OPTS -Xms512m -Xmx1024m -XX:PermSize=256m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled"
 
 # ----- Execute The Requested Command -----------------------------------------
 
