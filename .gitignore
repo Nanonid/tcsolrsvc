@@ -1,5 +1,7 @@
 *.class
 
+/webapps/mcore
+
 # logs #
 /logs/*
 *.out
