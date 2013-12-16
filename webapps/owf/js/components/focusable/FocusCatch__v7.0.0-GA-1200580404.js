@@ -1,0 +1,1 @@
+Ext.define("Ozone.components.focusable.FocusCatch",{extend:"Ext.Component",alias:"widget.focuscatch",cls:"focus-catch",listeners:{afterrender:function(a){Ozone.components.focusable.Focusable.clearOutline(a.getEl())}}});

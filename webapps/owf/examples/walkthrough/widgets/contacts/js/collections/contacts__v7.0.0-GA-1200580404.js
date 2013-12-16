@@ -1,0 +1,1 @@
+var app=app||{};(function(){var a=Backbone.Collection.extend({model:app.Contact,localStorage:new Store("contacts-backbone")});app.Contacts=new a();app.Contacts.fetch()}());

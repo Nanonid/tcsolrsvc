@@ -1,0 +1,1 @@
+var guid=guid||{};var Ozone=Ozone||{};Ozone.util=Ozone.util||{};guid.util=function(){function a(){return(((1+Math.random())*65536)|0).toString(16).substring(1)}return{guid:function(){return(a()+a()+"-"+a()+"-"+a()+"-"+a()+"-"+a()+a()+a())}}}();Ozone.util.guid=function(){return guid.util.guid()};

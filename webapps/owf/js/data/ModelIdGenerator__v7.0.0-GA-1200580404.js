@@ -1,0 +1,1 @@
+Ext.define("Ozone.data.ModelIdGenerator",{extend:"Ext.data.IdGenerator",alias:"idgen.model",getRecId:function(b){var a=this.overrideIdProperty||b.idProperty;return b.get(a)},generate:function(){return null}});

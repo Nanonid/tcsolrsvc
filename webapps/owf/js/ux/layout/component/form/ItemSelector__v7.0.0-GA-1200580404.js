@@ -1,0 +1,1 @@
+Ext.define("Ext.ux.layout.component.form.ItemSelector",{extend:"Ext.layout.component.field.Field",alias:["layout.itemselectorfield"],type:"itemselectorfield",defaultHeight:200,sizeBodyContents:function(b,a){var c=this;if(!Ext.isNumber(a)){a=c.defaultHeight}c.owner.innerCt.setSize(b,a)}});

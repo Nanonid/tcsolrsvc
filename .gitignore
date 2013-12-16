@@ -8,5 +8,6 @@
 *.log
 
 # temp #
+*.lock
 /temp/*
 /work/*

@@ -1,0 +1,1 @@
+Ext.define("Ozone.components.layout.container.HBox",{alias:["layout.owfhbox"],extend:"Ext.layout.container.HBox",initOverflowHandler:function(){if(this.overflowHandler==null){this.callParent(arguments)}else{if(typeof this.overflowHandler=="string"){this.overflowHandler=Ext.create(this.overflowHandler,this)}}}});

@@ -1,0 +1,1 @@
+Ext.define("Ozone.window.MessageBoxPlus",{extend:"Ext.window.MessageBox",alias:"widget.messageboxplus",doAutoSize:function(){this.callParent(arguments);var b=this;var a=b.getPosition(true)[0];if(a<0){b.setSize("95%",b.getHeight()*1.5);b.center()}return b}});

@@ -1,0 +1,1 @@
+Ext.define("Ozone.ux.AutoHideLoadMask",{extend:"Ext.LoadMask",alias:["widget.autohideloadmask"],initComponent:function(){var a=this;a.callParent(arguments);Ext.EventManager.on(window,"error",function(){a.hide()})},show:function(){var a=this;a.callParent(arguments);setTimeout(function(){a.hide()},30000)}});

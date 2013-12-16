@@ -1,0 +1,1 @@
+Ext.define("Ozone.components.keys.HotKeyComponent",{extend:"Ext.AbstractPlugin",constructor:function(a){this.init=function(b){b.on("show",function(){Ozone.KeyMap.set(a)});b.on("hide",function(){Ozone.KeyMap.reset();if(b.getEl().contains(document.activeElement)){document.activeElement.blur()}});b.on("destroy",function(){Ozone.KeyMap.reset()})}}});

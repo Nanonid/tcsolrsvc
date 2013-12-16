@@ -1,0 +1,1 @@
+if(!Ozone.disableWidgetInit){owfdojo.addOnLoad(function(){Ozone.util.pageLoad.afterLoad=(new Date()).getTime();Ozone.util.pageLoad.calcLoadTime();if(Ozone.util.isInContainer()){OWF._init(window,document)}})};

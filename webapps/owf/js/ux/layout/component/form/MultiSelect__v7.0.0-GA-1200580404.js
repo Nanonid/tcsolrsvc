@@ -1,0 +1,1 @@
+Ext.define("Ext.ux.layout.component.form.MultiSelect",{extend:"Ext.layout.component.field.Field",alias:["layout.multiselectfield"],type:"multiselectfield",defaultHeight:200,sizeBodyContents:function(b,a){var c=this;if(!Ext.isNumber(a)){a=c.defaultHeight}c.owner.panel.setSize(b,a)}});

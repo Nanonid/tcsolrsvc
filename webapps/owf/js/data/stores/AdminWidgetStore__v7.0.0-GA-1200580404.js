@@ -1,0 +1,1 @@
+Ext.define("Ozone.data.stores.AdminWidgetStore",{extend:"Ozone.data.OWFStore",model:"Ozone.data.WidgetDefinition",alias:"store.adminwidgetstore",remoteSort:true,sorters:[{property:"name",direction:"ASC"}],constructor:function(a){Ext.applyIf(a,{api:{read:"/widget",create:"/widget",update:"/widget",destroy:"/widget"}});this.callParent(arguments)}});

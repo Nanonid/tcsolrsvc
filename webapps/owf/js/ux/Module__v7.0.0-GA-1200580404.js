@@ -1,0 +1,1 @@
+Ext.namespace("Ozone.app");Ozone.app.Module=function(a){Ext.apply(this,a);Ozone.app.Module.superclass.constructor.call(this);this.init()};

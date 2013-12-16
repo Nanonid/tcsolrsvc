@@ -14,6 +14,4 @@ PRGDIR=`dirname "$PRG"`
 [ -z "$SOLR_HOME" ] && SOLR_HOME=`cd "$PRGDIR/solr" >/dev/null; pwd`
 export JAVA_OPTS="$JAVA_OPTS -Dsolr.data.dir=$SOLR_HOME"
 echo "Using SOLR_HOME:   $SOLR_HOME"
-./bin/catalina.sh start
-echo "Tailing ./log/solr.log"
-tail -f ./log/solr.log
+./bin/catalina.sh run

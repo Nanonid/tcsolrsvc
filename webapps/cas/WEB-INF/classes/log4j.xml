@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="cas" class="org.apache.log4j.CompositeRollingAppender">
+		<param name="RollingStyle" value="3" />
+		<param name="StaticLogFileName" value="false" />
+		<param name="File" value="logs/cas.log" />
+		<param name="CountDirection" value="1" />
+		<param name="MaxFileSize" value="100MB" />
+		<param name="MaxSizeRollBackups" value="-1" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="Encoding" value="UTF-8" />
+		<!--
+			Uncomment these parameters to boost performance but entries won't get
+			written immediately
+			 
+		<param name="BufferedIO" value="false"/>
+		<param name="BufferSize" value="8192"/>
+		-->
+		<!--
+			Set to immediate flush so the results are saved before a system
+			crash, slows performance though
+		-->
+		<param name="ImmediateFlush" value="true" />
+		<param name="Threshold" value="all" />
+		<layout class="org.apache.log4j.EnhancedPatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS z} [%t] %-5p[%c]: %m%n" />
+		</layout>
+	</appender>
+	
+		<logger name="org.jasig" additivity="false">
+		<level value="info" />
+		<appender-ref ref="cas" />
+	</logger>
+
+	<logger name="org.jasig.cas.web.flow" additivity="false">
+		<level value="info" />
+		<appender-ref ref="cas" />
+	</logger>
+    <logger name="org.springframework" additivity="false">
+        <level value="info" />
+        <appender-ref ref="cas" />
+    </logger>
+    <logger name="org.quartz" additivity="false">
+        <level value="info" />
+        <appender-ref ref="cas" />
+    </logger>
+    <logger name="org.inspektr" additivity="false">
+        <level value="info" />
+        <appender-ref ref="cas" />
+    </logger>
+    <logger name="ozone3" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="cas"/>
+    </logger>
+
+</log4j:configuration>
