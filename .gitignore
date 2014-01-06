@@ -1,6 +1,7 @@
 *.class
 
 /webapps/mcore
+/solr/mcorecollection
 
 # logs #
 /logs/*

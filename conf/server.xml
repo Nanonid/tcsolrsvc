@@ -131,6 +131,7 @@
        <!--  <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
                resourceName="UserDatabase"/> -->
       <!--   </Realm> -->
+     <Realm className="org.apache.catalina.realm.MemoryRealm" />
 
       <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
